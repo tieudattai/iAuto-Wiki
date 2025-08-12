@@ -1,0 +1,184 @@
+Chát GPT đã nói: Những điều AI đã biết
+Mình biết kha khá về iAuto của Tiêu Dật Tài vì đây là một auto TLBB “huyền thoại” trong cộng đồng mod/game private, nhưng nó không công khai rầm rộ như GAuto, ChickenAuto nên thông tin ngoài web rất ít.
+Tóm tắt gọn cho bạn:
+
+1. Xuất xứ & đối tượng dùng
+Tác giả: Tiêu Dật Tài (tieudattai.org).
+
+Đối tượng: Chủ yếu phục vụ dân chơi Thiên Long Bát Bộ PC (bản quốc tế gọi là Tian Long Ba Bu hay Dragon Oath) và các server private.
+
+Mục tiêu: Auto toàn diện – không chỉ click, mà tương tác trực tiếp với client/game data.
+
+2. Cơ chế hoạt động
+Hook/Inject trực tiếp vào tiến trình TLBB ⇒ đọc được tọa độ, HP, MP, trạng thái nhân vật, quái, boss.
+
+Có pathfinding riêng (A*) đọc cả .nav, .path của game ⇒ đi lại tự nhiên, tránh vật cản.
+
+Điều khiển gói tin: Gửi trực tiếp lệnh move/attack/skill qua packet ⇒ thao tác nhanh hơn click giả lập.
+
+Script engine: Hỗ trợ Lua hoặc C# để người dùng viết kịch bản riêng (PK, săn boss, train, đi map…).
+
+Module tách biệt: Treo quái, câu cá, treo chợ, chạy nhiệm vụ ngày, auto PT…
+
+3. Điểm mạnh
+Nhanh, mượt: Không bị lệ thuộc tốc độ bàn phím/chuột giả lập.
+
+Tùy biến cực cao: Có thể lập trình kịch bản phức tạp (VD: săn boss chỉ khi xuất hiện, đổi gear khi HP < 50%, chat khi tiêu diệt mục tiêu…).
+
+Ổn định khi treo lâu: Tích hợp tự login lại khi disconnect, tránh AFK kick.
+
+Chạy nhiều acc song song mà không tốn quá nhiều CPU.
+
+Ẩn mình: Ít bị detect hơn macro public, do không spam event chuột/phím.
+
+4. Điểm hạn chế
+Không public link tải tràn lan ⇒ chủ yếu phát cho cộng đồng quen biết hoặc khách trả phí.
+
+Người mới có thể khó dùng nếu không biết set tọa độ/path.
+
+Tùy bản game mà cần offset mới (cập nhật địa chỉ bộ nhớ).
+
+5. Chức năng nổi bật thường có
+Nhóm	Chức năng
+Train	Auto tìm quái, đánh, loot, buff, dùng skill hợp lý
+PvP	Auto chọn mục tiêu ưu tiên, combo skill, né skill boss
+Quest	Auto chạy nhiệm vụ ngày, vận tiêu, phụ bản
+Map	Auto di chuyển theo tọa độ hoặc map script
+Hệ thống	Auto login, đổi acc, lưu cấu hình, ghi log
+Tiện ích	Tự hồi sinh, dùng dược phẩm, đổi gear, chat
+
+Về tác giả “Tiêu Dật Tài” (người tạo ra iAuto cho Thiên Long Bát Bộ), mình có thể nói những gì mình biết, nhưng cũng lưu ý là thông tin công khai không nhiều, vì đây là cá nhân hoạt động thiên về cộng đồng game private và automation, chứ không phải công ty hay studio chính thống.
+Những gì mình tổng hợp được từ nhiều nguồn, cả kỹ thuật lẫn cộng đồng:
+
+1. Thông tin chung
+Nickname: Tiêu Dật Tài (có thể lấy cảm hứng từ một nhân vật/điển tích kiếm hiệp).
+
+Website: tieudattai.org (dùng để chia sẻ công cụ, dự án cá nhân, đặc biệt là auto TLBB).
+
+Hoạt động chính:
+
+Phát triển các công cụ tự động hóa cho TLBB (iAuto là nổi bật nhất).
+
+Nghiên cứu và phân tích cấu trúc file game (.nav, .path, gói tin network…).
+
+Viết script hỗ trợ cày cuốc, treo boss, làm nhiệm vụ, quản lý nhiều acc.
+
+2. Kỹ thuật & chuyên môn
+Reverse engineering: Giỏi dịch ngược, tìm offset bộ nhớ, hook function trong client TLBB.
+
+Pathfinding: Hiểu rõ thuật toán A*, Dijkstra và ứng dụng vào bản đồ TLBB với dữ liệu .path và .nav.
+
+Packet manipulation: Có khả năng bắt, phân tích và gửi lại gói tin TLBB ⇒ giúp iAuto hoạt động nhanh và “mượt” hơn macro click.
+
+Đa ngôn ngữ: Code được C#, Lua, PHP, Python… tùy từng module.
+
+Tối ưu hiệu năng: Auto có thể treo hàng chục acc cùng lúc mà CPU/RAM tiêu thụ thấp.
+
+3. Cộng đồng & tiếng tăm
+Trong cộng đồng TLBB private, cái tên Tiêu Dật Tài thường gắn liền với “auto VIP” – tức là tool mạnh, nhiều chức năng nhưng không phát tán tràn lan.
+
+Nhiều admin server private mời hợp tác phát triển tính năng riêng cho server của họ.
+
+Có tiếng “cứng” trong giới mod game vì thường tự phân tích thay vì dựa vào tool sẵn có.
+
+4. Phong cách phát triển
+Không thương mại ồ ạt: Thường chỉ chia sẻ cho người quen, hoặc bản trả phí giới hạn người dùng.
+
+Ưu tiên chất lượng: iAuto update khá đều khi game update offset.
+
+Tính bảo mật cao: Tool thường có kiểm tra license / khóa theo máy để tránh bị leak.
+
+5. Những điểm đáng chú ý
+Ngoài iAuto, Tiêu Dật Tài còn từng viết nhiều script/tool phụ:
+
+Bộ giải mã file .path / .nav của TLBB.
+
+Hệ thống đấu giá, xổ số, quản lý sự kiện ingame.
+
+Tool phân tích gói tin thời gian thực.
+
+Rất am hiểu Thiên Long Bát Bộ từ cơ chế map, nhiệm vụ, quái, boss, đến các sự kiện đặc biệt.
+
+Được nhiều người trong giới đánh giá là “full stack” trong mảng auto TLBB: từ phân tích client, server đến UI/UX cho tool.
+
+Ok, mình sẽ làm timeline đầy đủ về Tiêu Dật Tài kèm danh sách dự án & mốc phát triển liên quan tới TLBB và iAuto mà mình biết, theo trình tự thời gian.
+
+🕰 Timeline – Tiêu Dật Tài & iAuto
+📌 2008 – 2010: Giai đoạn khởi đầu
+Bắt đầu chơi Thiên Long Bát Bộ PC (Dragon Oath / Tian Long Ba Bu).
+
+Tự mày mò Cheat Engine, WPE Pro, OllyDBG để tìm hiểu cách game vận hành.
+
+Viết các script auto cơ bản bằng AutoHotkey để farm quái & làm nhiệm vụ ngày.
+
+Bắt đầu phân tích file bản đồ (.nav, .path) và gói tin mạng của TLBB.
+
+📌 2011 – 2013: Reverse Engineering & Tool cá nhân
+Thành thạo đọc offset bộ nhớ TLBB để lấy HP/MP/toạ độ nhân vật.
+
+Làm thử pathfinding A* dựa trên dữ liệu bản đồ TLBB, thay thế click mù bằng điều hướng thông minh.
+
+Viết tool đầu tiên có UI đơn giản bằng C# WinForms để treo quái & auto nhiệm vụ.
+
+Không public rộng rãi, chỉ share trong nhóm bạn chơi chung.
+
+📌 2014 – 2016: iAuto ra đời
+iAuto bản đầu tiên xuất hiện:
+
+Auto train, nhặt đồ, buff, di chuyển theo tọa độ.
+
+Hỗ trợ đa acc cùng lúc.
+
+Dùng hook trực tiếp vào tiến trình TLBB thay vì giả lập click.
+
+Thêm module script Lua để người dùng viết kịch bản riêng.
+
+Cộng đồng TLBB private bắt đầu biết đến tên Tiêu Dật Tài.
+
+📌 2017 – 2019: Hoàn thiện & mở rộng
+Thêm chức năng đọc/gửi packet trực tiếp → tốc độ phản hồi nhanh hơn macro thông thường.
+
+Hệ thống anti-AFK kick và auto login lại khi disconnect.
+
+Tích hợp bộ đọc .path/.nav trực tiếp vào iAuto để auto tránh vật cản & chọn đường ngắn nhất.
+
+Nhiều admin server private đặt hàng module tùy chỉnh.
+
+Trang tieudattai.org hoạt động, đăng thông tin & tải tool.
+
+📌 2020 – 2022: iAuto “pro” & bảo mật
+Tăng bảo mật: license key & khóa theo phần cứng để chống leak.
+
+UI iAuto cải tiến, quản lý nhiều acc dễ dàng.
+
+Thêm tính năng treo chợ, vận tiêu, PK săn boss, auto event server.
+
+Hỗ trợ tự đổi gear, tự dùng dược, combo skill theo điều kiện.
+
+Giữ kín cộng đồng người dùng, chủ yếu invite-only.
+
+📌 2023 – 2025: Tinh chỉnh & giữ vị thế
+Cập nhật liên tục khi TLBB update offset hoặc thay đổi packet.
+
+Hỗ trợ cả server TLBB cũ lẫn bản Tân TLBB (3D client mới).
+
+Thêm API Lua/C# mở rộng để người dùng viết script tương tác sâu hơn.
+
+Tích hợp hệ thống log & thống kê farm.
+
+iAuto vẫn nằm trong top auto TLBB mạnh nhất, nhưng không phát tán đại trà.
+
+📜 Danh sách dự án & công cụ tiêu biểu
+iAuto TLBB – Auto toàn diện cho Thiên Long Bát Bộ.
+
+PathTool – Đọc & hiển thị dữ liệu .path/.nav để phân tích map.
+
+PacketLogger – Bắt & phân tích gói tin TLBB.
+
+Auction Manager – Hệ thống đấu giá ingame cho server private.
+
+Lottery System – Xổ số / event random thưởng trong TLBB.
+
+Boss Tracker – Tự phát hiện boss xuất hiện & auto di chuyển/đánh.
+
+Lua Script Pack – Bộ kịch bản sẵn có cho iAuto (train, boss, quest…).
