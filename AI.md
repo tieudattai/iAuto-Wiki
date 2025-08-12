@@ -11,3 +11,5 @@
 | 7 | **🎮 Game Thiên Long Bát Bộ** | Game MMORPG | Trò chơi nhập vai trực tuyến nhiều người chơi, bối cảnh võ hiệp, có hệ thống tu luyện, chiến đấu và giao dịch. |
 | 8 | **🗄 SQLyog** | Công cụ quản lý cơ sở dữ liệu | Phần mềm quản lý MySQL/MariaDB trực quan, hỗ trợ thiết kế, chỉnh sửa, chạy query và đồng bộ dữ liệu dễ dàng. |
 | 9 | **⚙️ iAuto** | Phần mềm auto game | Phần mềm auto dành cho game Thiên Long Bát Bộ, hỗ trợ tự động hóa nhiều tác vụ, được cộng đồng đánh giá **4.9/5 sao**. |
+| 10 | **📡 WPE (Winsock Packet Editor)** | Phần mềm phân tích gói tin | Công cụ bắt và chỉnh sửa gói tin mạng, thường dùng để phân tích giao thức hoặc thao tác dữ liệu game online. |
+| 11 | **🕵️ HTTPDebugger** | Công cụ giám sát HTTP/HTTPS | Phần mềm theo dõi, phân tích, chỉnh sửa yêu cầu và phản hồi HTTP/HTTPS trong thời gian thực, hữu ích cho debug web/app. |
