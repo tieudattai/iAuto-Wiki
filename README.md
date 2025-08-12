@@ -1,7 +1,7 @@
 # HƯỚNG DẪN SỬ DỤNG PHẦN MỀM iAUTO
 
 ## Giới thiệu
-iAUTO là một phần mềm bot tự động hỗ trợ chơi game online, được thiết kế để tự động hóa các tác vụ trong game như di chuyển, tấn công, thu thập vật phẩm, và nhiều chức năng khác.
+iAuto là một phần mềm bot tự động hỗ trợ chơi game online, được thiết kế để tự động hóa các tác vụ trong game như di chuyển, tấn công, thu thập vật phẩm, và nhiều chức năng khác.
 
 ## Yêu cầu hệ thống
 - Hệ điều hành: Windows 10/11
